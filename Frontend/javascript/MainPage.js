@@ -21,14 +21,14 @@ function nextSlide() {
   showSlide();
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", () => {
   showSlide();
 });
 
 let currentIndex2 = 0;
 
 function showSlide2() {
-  const slides = document.querySelectorAll(".Homework_Items");
+  const slides = document.querySelectorAll(".funding-items");
   slides.forEach((slide, index) => {
     if (index === currentIndex2) {
       slide.style.display = "flex";
@@ -47,3 +47,7 @@ function nextSlide2() {
   currentIndex2 = currentIndex2 === 2 ? 0 : currentIndex2 + 1;
   showSlide2();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  showSlide2();
+});
